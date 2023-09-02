@@ -1,7 +1,7 @@
 let x = parseInt(prompt("enter value of x:"));
 let y = parseInt(prompt("enter value of y:"));
 
-let op = parseInt(prompt("enter value of op:"));
+let op = prompt("enter value of op:");
 
 console.log(x,y,op);
 
