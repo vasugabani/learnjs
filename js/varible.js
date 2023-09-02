@@ -22,7 +22,25 @@
 // }
 // console.log(x);
 
-let x;
-x = 10;
-x = x+5;
-console.log(x);
+// let x;
+// x = 10;
+// x = x+5;
+// console.log(x);
+
+// const x = 10;
+// const x = 20;
+// console.log(x);
+
+// const x = 10;
+// {
+//     const x = 20;
+// }
+// console.log(x);
+
+// const x = 10;
+// x = x+5;
+// console.log(x);
+
+const x;
+// x = 10;
+// console.log(x);
