@@ -5,7 +5,7 @@ let op = parseInt(prompt("enter value of op:"));
 
 console.log(x,y,op);
 
-switch (op) {
+switch (op){
     case '+':
         x=x+y;
         console.log(x);
@@ -22,6 +22,4 @@ switch (op) {
         x=x/y;
         console.log(x);
         break;        
-    default:
-        break;
 }
