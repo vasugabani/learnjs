@@ -2,13 +2,32 @@
     /* border: 2px solid black; */
     width: 400px;
     padding: 50px;
-    background-image: url(http://www.pptback.com/uploads/colors-brown-shadow-backgrounds-powerpoint.jpg);
+    /* background-image: url(http://www.pptback.com/uploads/colors-brown-shadow-backgrounds-powerpoint.jpg); */
+    background-color: wheat;
     box-sizing: border-box;
     border-radius: 10px;
     
+    
 }
-#id{
-    padding: 40px;
+#button{
+    padding: 8px 15px;
+    background-color: #9A4A1F;
     color: wheat;
-    background-color: rgb(152, 102, 9);
+    
+}
+#height{
+    background-color: #9A4A1F;
+    color: wheat;
+    padding: 5px;
+}
+#weight{
+    background-color: #9A4A1F;
+    color: wheat;
+    padding: 5px;
+}
+#check{
+    color: #9A4A1F;
+}
+#rating{
+    color: #9A4A1F;
 }
