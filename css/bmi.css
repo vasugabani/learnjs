@@ -1,0 +1,14 @@
+#deco{
+    /* border: 2px solid black; */
+    width: 400px;
+    padding: 50px;
+    background-image: url(http://www.pptback.com/uploads/colors-brown-shadow-backgrounds-powerpoint.jpg);
+    box-sizing: border-box;
+    border-radius: 10px;
+    
+}
+#id{
+    padding: 40px;
+    color: wheat;
+    background-color: rgb(152, 102, 9);
+}
