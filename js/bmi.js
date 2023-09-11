@@ -19,11 +19,14 @@ function handlesubmit() {
 
     let rate;
     if(bmi<18.6){
-        console.log("under weight",rate);
+        rate = "under weight";
+        console.log(rate);
     }else if(bmi<=24.9){
-        console.log("normal range",rate);
+        rate="normal range";
+        console.log(rate);
     }else if(bmi>24.9){
-        console.log("overweight",rate);
+        rate="overweight";
+        console.log(rate);
     }
     document.getElementById("rating").innerHTML=rate;
 }
