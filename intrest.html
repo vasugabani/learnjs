@@ -10,9 +10,13 @@
     <div id="deco">
         <h4>INTREST CALCULATE</h4>
         <form action="#" onsubmit="handlesubmit()">
-            <input type="number" name="amount" id="amount" placeholder="principale"><br><br>
-            <input type="number" name="rate" id="rate" placeholder="rate"><br><br>
-            <input type="number" name="time" id="time"><br><br><select name="select" id="select">
+            <input type="number" name="amount" id="amount" placeholder="principale">
+            <span id="amounterr"></span><br><br>
+            <input type="number" name="rate" id="rate" placeholder="rate">
+            <span id="rateerr"></span><br><br>
+            <input type="number" name="time" id="time">
+            <span id="timeerr"></span><br><br>
+            <select name="select" id="select"><span id="error"></span>
                 <option value="0">select</option>
                 <option value="y">year</option>
                 <option value="m">month</option>

@@ -1,8 +1,19 @@
 function handlesubmit() {
     event.preventDefault();
     // console.log(ok);
-    let salary=parseInt(document.getElementById("salary").value);
+
+    let salary=document.getElementById("salary").value;
     console.log("salary is :",salary);
+
+    if(salary === ''){
+        document.getElementById("check").innerHTML = 'please enter salary'
+    }else{
+        if(salary>0){
+            document.getElementById("check").innerHTML = ''
+        }else{
+            document.getElementById("check").innerHTML = 'please enter valid salary'
+        }
+    }
 
     let s1=0,s2=0,s3=0,s4=0,s5=0,s6=0,total,income;
 

@@ -1,20 +1,40 @@
 function handlesubmit() {
     event.preventDefault();
     
-    let height=parseFloat(document.getElementById("height").value);
-    let weight=parseFloat(document.getElementById("weight").value);
+    let height=document.getElementById("height").value;
+    let weight=document.getElementById("weight").value;
 
     // console.log(height);
     // console.log(weight);
 
-    let m;
-    m=height/100;
-    console.log(m);
+    if(height === ''){
+      document.getElementById("result").innerHTML = 'please enter height' 
+    }else{
+        if(height>50 && height <=300){
+            document.getElementById("result").innerHTML = ''
+        }else{
+            document.getElementById("result").innerHTML = 'please enter valid height'
+        }
+    }
 
-    let bmi;
-    bmi=weight/(m*m);
-    console.log("bmi is",bmi);
+    if(weight === ''){
+        document.getElementById("error").innerHTML = 'please enter weight' 
+      }else{
+          if(weight>10 && weight<=200){
+              document.getElementById("error").innerHTML = ''
+          }else{
+              document.getElementById("error").innerHTML = 'please enter valid weight'
+          }
+      }
 
+    let m,bmi;
+    
+    if((height>0 && height<=300) && (weight>10 && weight<=200)){
+        m=height/100;
+        console.log(m);
+        bmi=weight/(m*m);
+        console.log("bmi is",bmi);
+    }
     document.getElementById("check").innerHTML=bmi;
 
     let rate;

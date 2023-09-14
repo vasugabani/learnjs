@@ -18,4 +18,12 @@ function handlesubmit() {
     }else{
         alert("incorrect answer. correct anser is:"+ correctans);
     }
+
+    let answer=document.getElementById("ans").value
+
+    if(answer === ''){
+        document.getElementById("check").innerHTML ='please enter answer'
+    }else{
+        document.getElementById("check").innerHTML = ''
+    }
 }

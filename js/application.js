@@ -1,5 +1,13 @@
 function validateForm() {
     // console.log("ok");
+
+    // last step
+    let nameE= true;
+    let emailE=true;
+    let numberE=true;
+    let selectE=true;
+    let genderE=true;
+    let hobbyE=true;
     
     let name=document.contactForm.name.value;
     console.log(name);
@@ -11,6 +19,7 @@ function validateForm() {
 
         if(namereg.test(name)){
             document.getElementById("nameErr").innerHTML = '';
+            nameE= false;
         }else{
             document.getElementById("nameErr").innerHTML = 'please enter valid name'
         }   
@@ -26,6 +35,7 @@ function validateForm() {
     
         if(namee.test(ename)){
             document.getElementById("emailErr").innerHTML = ''
+            emailE=false;
         }else{
             document.getElementById("emailErr").innerHTML = 'please enter valid email'
         }
@@ -41,6 +51,7 @@ function validateForm() {
 
         if(mobile_num.test(mobile)){
             document.getElementById("mobileErr").innerHTML =''
+            numberE=false;
         } else{
             document.getElementById("mobileErr").innerHTML = 'please enter valid number'
         }
@@ -52,7 +63,42 @@ function validateForm() {
         document.getElementById("countryErr").innerHTML = ' please select country'
     }else{
         document.getElementById("countryErr").innerHTML = ''
+        selectE=false;
     }
 
-    return false;
+    let gender1 = document.contactForm.gender.value;
+
+    if(gender1 === ''){
+        document.getElementById("genderErr").innerHTML = 'please select gender'
+    }else{
+        document.getElementById("genderErr").innerHTML = ''
+        genderE=false;
+    }
+
+    let hobby=document.contactForm.hobbies;
+    // console.log(hobby[0].value);
+
+    let flag = false;
+
+    for(let i=0; i<hobby.length; i++){
+        console.log(hobby[i].value,hobby[i].checked);
+
+        if(hobby[i].checked){
+            flag = true;
+            break;
+        }
+    }
+
+    if(flag){
+        document.getElementById("hobbyErr").innerHTML = ''
+        hobbyE=false;
+    }else{
+        document.getElementById("hobbyErr").innerHTML = 'please select minimun one hobbies'
+    }
+
+    if(nameE || emailE || numberE || selectE || genderE || hobbyE){
+        return false;
+    }else{
+        return true;
+    }
 }    
