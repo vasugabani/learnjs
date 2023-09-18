@@ -6,3 +6,4 @@ alert("ok");
 
 let x = parseInt(prompt("enter value of x: "));
 console.log(x);
+

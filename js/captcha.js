@@ -12,18 +12,17 @@ console.log(correctans);
 function handlesubmit() {
 
     let value=parseInt(document.getElementById("ans").value);
-
-    if(correctans==value){
-        alert("correct answer");
-    }else{
-        alert("incorrect answer. correct anser is:"+ correctans);
-    }
-
     let answer=document.getElementById("ans").value
 
-    if(answer === ''){
-        document.getElementById("check").innerHTML ='please enter answer'
+    if(answer){
+        if(correctans==value){
+            alert("correct answer");
+        }else{
+            alert("incorrect answer. correct anser is:"+ correctans);
+        }
+        document.getElementById("check").innerHTML =''
     }else{
-        document.getElementById("check").innerHTML = ''
+        document.getElementById("check").innerHTML ='please enter answer'  
     }
+    return false;
 }

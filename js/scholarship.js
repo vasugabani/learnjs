@@ -34,4 +34,6 @@ function handlesubmit(){
         }
         console.log("scholarship is:",scholar);
     }
+
+    return false;
 }

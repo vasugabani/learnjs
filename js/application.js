@@ -5,7 +5,7 @@ function validateForm() {
     let nameE= true;
     let emailE=true;
     let numberE=true;
-    let selectE=true;
+    let selectE=true;                   
     let genderE=true;
     let hobbyE=true;
     
