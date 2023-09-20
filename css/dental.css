@@ -1,0 +1,9 @@
+#deco{
+    border: 2px solid black;
+    margin: 0 auto;
+    background-color: black;
+    color: whitesmoke;
+    width: 200px;
+    padding: 50px;
+    border-radius: 10px;
+}
