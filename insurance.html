@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #coast{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" onsubmit="return handlesubmit()">
+
+        <h1>insurance system</h1>
+        <br><br>
+
+        name <span></span><input type="text" name="name" id="name">
+        <br><br>
+
+        date of birth <span></span> <input type="date" name="date" id="date">
+        <br><br>
+
+        mobile no <span></span><input type="number" name="number" id="number">
+        <br><br>
+
+        occuapation : <select name="sal_self" id="sal_self">
+            <option value="1">salaried</option>
+            <option value="2">self employes</option>
+        </select>
+
+        <br><br>
+
+        annual income <span></span><select name="select" id="select">
+            <option value="1">0-3 lakh</option>
+            <option value="2">3 to 5 lakh</option>
+            <option value="3">5 to 10 lakh</option>
+            <option value="4">above 10 lakh</option>
+        </select>
+        <br><br>
+
+        insurance amount <input type="number" name="amount" id="amount"><span id="alert"></span>
+        <br><br>
+
+        smoke <select name="smoke" id="smoke">
+            <option value="1">yes</option>
+            <option value="2">no</option>
+        </select>
+        <br><br>
+
+        <input type="submit">
+
+        <table></table>
+
+        <div id="coast"></div>
+
+    </form>
+
+    
+
+    <script src="js/insurance.js"></script>
+</body>
+
+</html>
