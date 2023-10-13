@@ -28,17 +28,24 @@ function handleclick(i) {
 
 const display = () => {
     
+    let ulele=document.getElementById("check");
 
-    let print = '<ul>'
+    let liele=document.createElement("li");
+    let litext=document.createTextNode("10");
 
-    nname.map((v,i) => {
-        print = print + `<li>${v} <button onclick="handleedit(${i})">E</button><button onclick="handleclick(${i})">X</button></li>`
-    })
+    liele.appendChild(litext);
+    ulele.appendChild(liele);
+
+    // let print = '<ul>'
+
+    // nname.map((v,i) => {
+    //     print = print + `<li>${v} <button onclick="handleedit(${i})">E</button><button onclick="handleclick(${i})">X</button></li>`
+    // })
         
     
-    print = print + '</ul>'
+    // print = print + '</ul>'
 
-    document.getElementById("check").innerHTML = print;
+    // document.getElementById("check").innerHTML = print;
 }
 
 const handleedit = (i) => {
@@ -48,5 +55,6 @@ const handleedit = (i) => {
 
     document.getElementById("name").value = nname[i];
 
-    display();
+    // display();
 }
+

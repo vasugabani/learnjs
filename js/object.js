@@ -124,20 +124,43 @@ let data = {
     }
 }
 
-for (let k in data) {
-    // console.log(k);
+
+for(let a in data){
+    // console.log(a);
+
+    for(let b in data[a]){
+        if(a==='personal_info'){
+            console.log(data[a][b]);
+        }
+    }
+    for(let c in data[a]){
+        if(a==='courses'){
+            console.log(data[a][c]);
+        }
+    }
+    for(let d in data[a]){
+        if(a==='branches'){
+            // console.log(data[a][d]);
+            for(let e in data[a][d]){
+                console.log(a,d,e,data[a][d][e]);
+            }
+        }
+    }
+}
+// for (let k in data) {
+//     // console.log(k);
 
 
-    // for (let j in data[k]) {
-    //     console.log(data[k][j]);
+//     for (let j in data[k]) {
+//         console.log(data[k][j]);
 
-    //     if (k === 'branches') {
+//         if (k === 'branches') {
 
-    //         for (let i in data[k][j]) {
-    //             console.log(i,j,k,data[k][j][i]);
-    //         }
-    //     }
-    // }
+//             for (let i in data[k][j]) {
+//                 console.log(i,j,k,data[k][j][i]);
+//             }
+//         }
+//     }
 
     
-}
+// }

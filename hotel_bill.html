@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/hotel_bill.css">
+</head>
+
+<body>
+    <h1>Hotel Bill System</h1>
+    <div id="deco">
+        <form action="#" onsubmit="return handlesubmit()">
+
+
+            <b>Date :</b> <input type="date" name="date" id="Date">
+            <span id="checkdate"></span><br><br>
+
+            <b>Table :</b><select name="seltable" id="seltable">
+                <option value="0">--select table--</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <span id="checktable"></span><br><br>
+
+            <b>Food :</b> <select name="selfood" id="selfood">
+                <option value="0">--select--</option>
+                <option value="punjabi">punjabi</option>
+                <option value="chinese">chinese</option>
+                <option value="south-indian">south indian</option>
+            </select><span id="checkfood"></span><br><br>
+
+            <b>No. of Person :</b> <input type="number" name="number" id="number">
+            <span id="checkperson"></span><br><br><br><br><br>
+
+            <center> <input type="submit" id="submit">
+            </center> <br><br><br>
+        </form>
+    </div>
+    <div>
+        <table id="disp" border="4">
+            <tr>
+                <th>Date</th>
+                <th>Table</th>
+                <th>Food</th>
+                <th>No of Person</th>
+                <th>Total bill</th>
+                <th>Action</th>
+            </tr>
+        </table>
+    </div>
+    <script src="js/hotel_bill.js"></script>
+</body>
+
+</html>

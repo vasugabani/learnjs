@@ -1,0 +1,50 @@
+body {
+    background-image: url(../images/2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: white;
+    
+}
+h1{
+    text-decoration: underline;
+    text-align: center;
+    background-color:rgba(0,0,0,0.6);
+}
+#submit{
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-style: bold;
+    background-color: black;
+}
+#deco {
+    padding: 40px;
+    margin-left: 40px;
+    width: 300px;
+    background-color:rgba(255,255,255,0.6);
+    border-radius: 15px;
+    color: black;
+    /* background-image: url(../images/ramyan1.jpg); */
+}
+#disp{
+    margin-left: 40px;
+    padding: 10px;
+    margin-top: 50px;
+    border-radius: 15px;
+   
+    background-color:rgba(0,0,0,0.6);
+    /* display: none; */
+    /* text-align: end; */
+}
+
+#checkdate{
+    color: red;
+    font-style: bold;
+}
+#checkperson{
+    color: red;
+    font-style: bold;
+}
