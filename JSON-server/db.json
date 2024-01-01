@@ -1,0 +1,16 @@
+{
+  "student": [
+    {
+      "roll": 12,
+      "name": "vasu",
+      "fees": 10000,
+      "id": 4
+    },
+    {
+      "roll": 1,
+      "name": "dev",
+      "fees": 20000,
+      "id": 5
+    }
+  ]
+}
